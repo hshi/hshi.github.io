@@ -1,0 +1,309 @@
+.debug {
+	display: none;
+    float: right;
+    color: red;
+}
+
+a.gs-title:link {
+	color: #555555;
+}
+
+#visibilityAlert {
+display: none;
+    color: green;
+}
+
+#newerposts {
+   float: left;
+}
+
+#olderposts {
+   float: right;
+}
+.slidenote {
+	display: none;
+}
+
+#errormessages {
+padding:0;
+margin: 0;
+width: 490px;
+}
+
+.error {
+color:#dd0000;
+font-family: arial;
+font-size: 0.9em;
+font-weight:bold;
+clear:both;
+line-height: 1.5em;
+}
+
+
+
+/* - - - - - - CSS Document - - - - - - - - -
+
+Title : Global style sheet for client-side web development
+Author : Cody Lindley
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+*{padding: 0; margin: 0;}
+
+/* ----- global default/initial styles -----
+body {background-color:#fff;}
+
+html, body {height:100%;} */
+
+/* ----- base default font size, type, and line height -----
+html body{font: 62.5%/1.4em Arial, Helvetica, sans-serif;color:#333333}
+html>body{font: 62.5%/1.4em Arial, Helvetica, sans-serif;color:#333333} */
+
+/* ----- add selectors here for font sizing ----- */
+#JT_close_left, #JT_close_right{font-size: 0.8em;}
+#JT_copy p, #JT_copy ul{font-size: 0.8em;}
+/*p, label{font-size: 1.2em;} */
+
+
+/* ----- base links -----
+a:link {color: #CC6633;}
+a:visited {color: #CC6633;}
+a:hover {color: #999966;}
+a:active {color: #CC6633;}
+a:focus{color: #CC6633;}
+
+p {line-height:1.4em;margin:10px 0;}
+hr{margin:10px 0;color:#999999;}
+
+ul{
+	list-style: none;
+}
+
+ul li{
+padding-top:3px;
+} */
+
+#contentPad{
+margin:20px;
+}
+
+/*
+.formInfo a, .formInfo a:active, formInfo a:visited{
+	background-color:#FF0000;
+	font-size: 1.3em;
+	font-weight:bold;
+	padding:1px 2px;
+	margin-left:5px;
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+.formInfo a:hover{
+	color:#660000;
+	text-decoration: none;
+}
+*/
+
+/* ---------->>> jtip <<<---------------------------------------------------------------*/
+
+#JT_arrow_left{
+	background-image: url(../img/arrow_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: absolute;
+	z-index:101;
+	left:-12px;
+	height:23px;
+	width:10px;
+    top:-3px;
+}
+
+#JT_arrow_right{
+	background-image: url(../img/arrow_right.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: absolute;
+	z-index:101;
+	height:23px;
+	width:11px;
+    top:-2px;
+}
+
+#JT {
+	position: absolute;
+	z-index:100;
+	border: 2px solid #CCCCCC;
+	background-color: #fff;
+}
+
+#JT_copy{
+	padding:10px 10px 10px 10px;
+	color:#333333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.JT_loader{
+	background-image: url(../img/loader.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:100%;
+	height:12px;
+}
+
+#JT_close_left{
+	background-color: #CCCCCC;
+	text-align: left;
+	padding-left: 8px;
+	padding-bottom: 5px;
+	padding-top: 2px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#JT_close_right{
+	background-color: #CCCCCC;
+	text-align: left;
+	padding-left: 8px;
+	padding-bottom: 5px;
+	padding-top: 2px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#JT_copy p{
+margin:3px 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#JT_copy img{
+	padding: 1px;
+	border: 1px solid #CCCCCC;
+}
+
+.jTip{
+cursor:help;
+}
+
+/*** Social Media Icons ***/
+#socialmediaList {
+	margin: 0 10px 10px;
+    padding: 0;
+    text-align: left;
+}
+#socialmediaList li {
+	display: inline;
+	background: none !important;
+	padding-left: 0px !important;
+	border: none !important;
+}
+#socialmediaList a {
+	margin: 0 !important;
+}
+#socialmediaList li a img {
+	height: 25px;
+	width: 25px;
+	position: relative;
+	top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+#socialmediaList li:last-child a img {
+    padding-right: 0;
+}
+
+/*
+ * Share Bar
+ */
+
+.shareBar {
+	width: 100%;
+	background-color: transparent;
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	color: #6d7c6d;
+	padding: 0px;
+	margin: 0px;
+	font-size: 13px;
+	height: 20px;
+	line-height: 20px;
+}
+#vims.shareBar {
+	background-color: #c4c4c4;
+}
+ul.share-actions {
+	list-style:none;
+	padding: 0px 0px;
+	display: inline-block;
+	height: 20px;
+	margin: 4px auto 4px auto;
+	border: none;
+}
+ul.share-actions li {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+	padding: 0px 4px 0px 4px;
+	border: none;
+}
+ul.share-actions li a {
+	text-indent:-9999px;
+	position:absolute;
+	outline: none;
+}
+.share-actions li.facebook a {
+	background: url(../img/icons/fb.png) no-repeat top center;
+	width: 18px;
+	height: 20px;
+}
+.share-actions li.email {
+    width: 25px !important;
+}
+.share-actions li.email a {
+    background: url(../img/icons/email.png) no-repeat center 2px;
+    width: 25px;
+    height: 19px;
+}
+.share-actions li.twitter a {
+	background: url(../img/icons/twitter.png) no-repeat top center;
+	width: 20px;
+	height: 20px;
+}
+.share-actions li.delicious a {
+	background: url(../img/icons/delicious.png) no-repeat top center;
+	width: 20px;
+	height: 20px;
+}
+.share-actions li.digg a {
+	background: url(../img/icons/digg.png) no-repeat top center;
+	width: 20px;
+	height: 20px;
+}
+.share-actions li.stumbleupon a {
+	background: url(../img/icons/stumbleupon.png) no-repeat top center;
+	width: 20px;
+	height: 20px;
+}
+.share-actions li.linkedin a {
+	background: url(../img/icons/linkedin.png) no-repeat top center;
+	width: 20px;
+	height: 20px;
+}
+
+/*** Widgets ***/
+.twitter-sidebar-widget {
+	min-height: 250px;
+}
+.facebook-sidebar-widget {
+	min-height: 85px;
+}
+.column #tv_site_search {
+	width: 225px;
+	margin: 10px auto;
+}
+.column #tv_site_search input[type="text"] {
+	width: 150px;
+}
+.column #tv_site_search input[type="submit"] {
+	width: 65px;
+	padding: 5px;
+}
