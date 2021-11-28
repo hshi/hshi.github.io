@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+<meta charset="UTF-8">
+<title>
+Site of Lawrence Shi
+</title>
+
+</head>
+
+
+
+<h1>
+欢迎来到乐乐的网站 
+</h1>
+
+<p>
+Welcome to Lawrence's Website. 我叫石空，我喜欢写python程序。
+</p >
+
+<p style="color:Red;"> 这是我上学的照片 </p> <p>&#128512;</p>
+
+<p>
+<img src="乐乐上学.jpg" width="300">
+</p>
+
+<p>
+这是我爸爸的 <a href="http://www.boruoshihao.com"> 网站 </a>
+</p>
+
+<p>
+我最喜欢<a href="http://www.google.com"> GOOLE </a>
+</p>
+
+<body>
+
+<p>
+以下我和爸爸写的程序
+</p>
+
+<p>
+这是第一个,程序名：删word.py
+</p>
+  <pre><code class="python">
+ #程序名：删word.py
+    import os
+
+print('请输入你想删的文件的数')
+x = input()
+x=int(x)
+#以下是删除文件夹的程序
+for a in range(x):
+	filename = '工作%s.doc'%(a+1)
+	if(os.path.exists(filename)):
+		os.remove( filename )
+	else:
+		print('%s 这个文件不存在在'%(filename))
+
+  </code></pre>
+  
+ <p>
+这是第二个, 程序名：建word.py
+ </p>
+  <pre><code class="python">
+print('请输入你想建的文件的数')
+x = input()
+x=int(x)
+#以下是新建文件夹的程序
+for a in range(x):
+	f = open('工作%s.doc'%(a+1) , 'w')
+	f.close()
+ </code></pre>
+ 
+ <pre><code class="python">
+  #这是第三个
+  #程序名：选择.py
+   print('请输入你的名字')
+x = input()
+
+if x == '乐乐':
+	print('主人你好!') 
+elif x == '石浩':
+	print('主人的爸爸你好!') 
+elif x == '章海霞':
+	print('主人的妈妈你好!') 
+elif x == '天天':
+	print('主人的弟弟你好!') 
+else:
+	print('我不认识你!') 
+</code></pre>
+
+ <pre><code class="python">
+      #这是第四个
+  #程序名：数数字.py
+   print('请输入想数到的数字')
+x = input()
+x = int(x)
+a = 0
+for i in range(x):
+	a = a+1
+	print(a)
+ </code></pre>
+ 
+ <pre><code class="python">
+     #这是第五个
+  #程序名：减法.py
+   print('请输入被减数')
+x= input()
+x= int(x)
+print('请输入减数')
+y=input()
+y=int(y)
+
+if x<y:
+	print('减数大于被除数，程序不执行')
+	exit()
+
+a=x-y
+print('%s-%s=%s'%(x,y,a))    
+ 
+ </code></pre>
+
+
+ <pre><code class="python">
+     #这是第六个
+  #程序名：加法公式.py
+     import time
+
+print('请输入想加到的数字')
+n = input()
+n= int(n)
+
+t1 = time.time()
+
+x=(1+n)*n/2
+x=int(x)
+print("从1加到%s等于%s"%(n,x))
+
+t2 = time.time()
+print("Time consumed is working: %s second "%(t2 - t1) )
+
+ </code></pre>
+ 
+  <pre><code class="python">
+     #这是第七个
+  #程序名：除法.py
+print('请输入被除数')
+x= input()
+x= int(x)
+print('请输入除数')
+y=input()
+y=int(y)
+a = x//y
+b=x%y
+if b!=0:
+	print('%s/%s=%s......%s'%(x,y,a,b)) 
+else:
+	print('%s/%s=%s'%(x,y,a))
+	
+</code></pre>
+
+ <pre><code class="python">
+     #这是第九个
+  #程序名：乘法.py
+print('请输入第一个乘数')
+x= input()
+x= int(x)
+print('请输入第二个乘数')
+y=input()
+y=int(y)
+a = x*y
+print('%s*%s=%s'%(x,y,a)) 
+</code></pre>
+
+
+</body>
+
+</html>
+
+
+
+
