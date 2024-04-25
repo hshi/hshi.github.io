@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 180%;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: underline;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.horizontal_block_a{
+  background-color:#ffffff;
+}
+
+.horizontal_block_b{
+  background-color:#f0efed;
+}
+
+.container_one_column {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout for mobile */
+  grid-gap: 20px; /* Gap between grid items */
+  padding: 20px; /* Padding inside the container */  
+}
+
+.container_two_column {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns in the grid */
+  grid-gap: 20px; /* Gap between grid items */
+  padding: 20px; /* Padding inside the container */  
+}
+
+.one-center-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.one-center-div iframe {
+  width: 100%;
+  height: 390px;
+}
+
+.one-center-div img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  padding: 20px auto; /* Remove default padding */
+}
+li {
+  margin-bottom: 10px; /* Adds space between list items */
+  line-height: 1.5; /* Sets line height for better readability */
+  padding-left: 10px /* space between list bullets and text */
+}
+li::marker {
+  color: #007bff;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 100%;
+  }
+  .container_two_column {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+  }
+  li {
+    padding-left: 0px /* space between list bullets and text */
+  }
+}
