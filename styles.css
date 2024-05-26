@@ -23,6 +23,12 @@ nav a {
   margin: 0 10px;
 }
 
+nav a:hover {
+  text-decoration: none;
+  background-color: #ddd;
+  color: black;
+}
+
 .horizontal_block_a{
   background-color:#ffffff;
 }
@@ -87,10 +93,12 @@ footer {
   body {
     font-size: 100%;
   }
+
   .container_two_column {
     grid-template-columns: 1fr; /* Single column layout for mobile */
   }
   li {
     padding-left: 0px /* space between list bullets and text */
   }
+
 }
