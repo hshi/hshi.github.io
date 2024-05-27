@@ -1,44 +1,52 @@
-body {
+body.h-body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   font-size: 100%;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
+header.h-header {
+  background-color: #333; /* black */
+  color: #fff;  /* white */
   padding: 10px 0;
   text-align: center;
 }
 
-nav {
-  display: none;
-  text-align: center;
+header.h-header h1{
+  font-size: 2.0em ;
+}
+
+nav.h-nav {
+  display: none; /* for mobile */
   margin-bottom: 20px;
 }
 
-nav a {
+nav > a.h-a {
   text-decoration: underline;
   color: #fff;
   margin: 0 10px;
 }
 
-nav a:hover {
+nav > a.h-a:hover {
   text-decoration: none;
   background-color: #ddd;
-  color: black;
+  color: #333;
 }
 
-.horizontal_block_a{
-  background-color:#ffffff;
+div.h-section{  
+  margin: 0;
+  padding: 0;
 }
 
-.horizontal_block_b{
-  background-color:#f0efed;
+div.h-section:nth-child(odd) {
+    background-color: #f0f0f0;
 }
 
-.container_one_column {
+div.h-section:nth-child(even) {
+    background-color: #fff;
+}
+
+div.container_one_column {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -47,7 +55,7 @@ nav a:hover {
   padding: 20px; /* Padding inside the container */  
 }
 
-.container_two_column {
+div.container_two_column {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -56,57 +64,78 @@ nav a:hover {
   padding: 20px; /* Padding inside the container */  
 }
 
-.one-center-div{
+div.one-center-div{
   display: flex;
   justify-content: center;
   align-items: center;  
 }
 
-.one-center-div iframe {
+div.one-center-div iframe {
   width: 100%;
   height: 390px;
 }
 
-.one-center-div img {
+div.one-center-div img {
   width: 100%;
   height: auto;
 }
 
-ul {
-  padding: 20px auto; /* Remove default padding */
-}
-
-li {
+ul > li.h-li {
+  list-style-type: none; /* Remove default markers */
   margin-bottom: 10px; /* Adds space between list items */
   line-height: 1.5; /* Sets line height for better readability */
-  padding-left: 10px /* space between list bullets and text */
+  padding-left: 5px /* space between list bullets and text */
 }
-li::marker {
+
+ul > li.h-li::marker {
+  content: '● '; 
   color: #007bff;
+  /* content: '■ '; */
 }
-footer {
-  background-color: #333;
-  color: #fff;
+
+footer.h-footer {
+  background-color: #333; /*black*/
+  color: #fff; /*white*/
   text-align: center;
   padding: 10px 0;
 }
 
-
+/*For device like Tablet 768px-992px*/
 @media screen and (min-width: 768px) {
-  body {
-    font-size: 180%;
+  body.h-body {
+    font-size: 135%;
   }
 
-  nav {
+  header.h-header h1{
+    font-size: 2.5em ;
+  }
+
+  nav.h-nav {
     display: block;
   }
-  
-  .container_two_column {
+
+  div.container_two_column {
     grid-template-columns: 1fr 1fr; /* Two columns in the grid */
   }
 
-  li {
-    padding-left: 0px /* space between list bullets and text */
+}
+
+/*For device like Desktop, larger than 992px*/
+@media screen and (min-width: 992px) {
+  body.h-body {
+    font-size: 180%;
+  }
+
+  header.h-header h1{
+    font-size: 2.5em ;
+  }
+
+  nav.h-nav {
+    display: block;
+  }
+
+  div.container_two_column {
+    grid-template-columns: 1fr 1fr; /* Two columns in the grid */
   }
 
 }
