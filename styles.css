@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 180%;
+  font-size: 100%;
 }
 
 header {
@@ -13,6 +13,7 @@ header {
 }
 
 nav {
+  display: none;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -50,7 +51,7 @@ nav a:hover {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns in the grid */
+  grid-template-columns: 1fr; /* Single column layout for mobile */
   grid-gap: 20px; /* Gap between grid items */
   padding: 20px; /* Padding inside the container */  
 }
@@ -74,6 +75,7 @@ nav a:hover {
 ul {
   padding: 20px auto; /* Remove default padding */
 }
+
 li {
   margin-bottom: 10px; /* Adds space between list items */
   line-height: 1.5; /* Sets line height for better readability */
@@ -89,14 +91,20 @@ footer {
   padding: 10px 0;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 768px) {
   body {
-    font-size: 100%;
+    font-size: 180%;
   }
 
-  .container_two_column {
-    grid-template-columns: 1fr; /* Single column layout for mobile */
+  nav {
+    display: block;
   }
+  
+  .container_two_column {
+    grid-template-columns: 1fr 1fr; /* Two columns in the grid */
+  }
+
   li {
     padding-left: 0px /* space between list bullets and text */
   }
