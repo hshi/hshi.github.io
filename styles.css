@@ -102,6 +102,12 @@ a.h-circle{
   text-align: center;
   justify-content: center;
   cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+a.h-circle.show{
+  opacity: 1;
 }
 
 a.h-circle:hover{
