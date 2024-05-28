@@ -92,8 +92,8 @@ ul > li.h-li::marker {
 
 a.h-circle{
   position: fixed;
-  bottom: 10px;
-  right: 10px; 
+  bottom: 30px;
+  right: 15px; 
   background-color: transparent;
   border: 2px solid black;
   border-radius: 50%;
