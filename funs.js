@@ -1,3 +1,22 @@
+//Click hamburger to show navigation
+//Click naviagtion is stack hamburger
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.h-nav');
+    const navLinks = document.querySelectorAll('.h-nav .h-a');
+
+    hamburger.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            nav.classList.remove('active');
+        });
+    });
+});
+
+
 //Show Scroll Top Button
 document.addEventListener('DOMContentLoaded', function() {
   const scrollTopBtn = document.getElementById('scrollTopBtn');
